@@ -2,7 +2,7 @@ var c=document.getElementById("Canvas");
 var ctx=c.getContext("2d");
 var gravity = 1/750
 var mousePos;
-var math = require('mathjs')
+//var math = require('mathjs')
 //document.addEventListener("click", function(){
 //  console.log("fuck")
 //});
@@ -45,10 +45,10 @@ class Obstacles{
     this.fx = fx
   }
   renew(){
-    for (var i = 0; i < this.fx-this.ix; i++)
-    {
-      makeRect(i+this.ix, Canvas.height - math.eval(this.funk.replace("x", String(i))), 1, 1, "#B22222")
-    }
+//    for (var i = 0; i < this.fx-this.ix; i++)
+ //   {
+   //   makeRect(i+this.ix, Canvas.height - math.eval(this.funk.replace("x", String(i))), 1, 1, "#B22222")
+    //}
   }
 }
 
