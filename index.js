@@ -1,23 +1,23 @@
 var c=document.getElementById("Canvas");
 var ctx=c.getContext("2d");
-var gravity = 1/750
+var gravity = 1/750;
 var mousePos;
 //var math = require('mathjs')
 //document.addEventListener("click", function(){
 //  console.log("fuck")
 //});
 var mouseDown;
-var mouseDownBoolean = false
+var mouseDownBoolean = false;
 document.body.onmousedown = function() { 
   //console.log("mouse down")
-  mouseDown = mousePos
-  mouseDownBoolean = true
+  mouseDown = mousePos;
+  mouseDownBoolean = true;
 }
 document.body.onmouseup = function() {
   //console.log("mouse up")
-  mouseUp = mousePos
-  changeDirect()
-  mouseDownBoolean = false
+  mouseUp = mousePos;
+  changeDirect();
+  mouseDownBoolean = false;
 }
 function changeDirect(){
   var dx = mouseDown.x - mouseUp.x
